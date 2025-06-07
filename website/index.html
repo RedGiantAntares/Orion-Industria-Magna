@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orion Industria Magna | Star Citizen Mining & Resource Organization</title>
+  <meta name="description" content="Orion Industria Magna is a Star Citizen organization focused on mining, salvaging, and transport operations. Join our crew and explore the universe while harvesting its resources.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/logo-icon.png">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="logo">
+        <a href="index.html">
+          <img src="images/logo-horizontal.png" alt="Orion Industria Magna Logo">
+        </a>
+      </div>
+      
+      <nav class="nav">
+        <button class="mobile-menu-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+        
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#operations" class="nav-link">Operations</a>
+          </li>
+          <li class="nav-item">
+            <a href="#fleet" class="nav-link">Fleet</a>
+          </li>
+          <li class="nav-item">
+            <a href="#join" class="nav-link">Join Us</a>
+          </li>
+        </ul>
+        
+        <div class="nav-cta">
+          <a href="#join" class="btn btn-primary">Join Now</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <img src="images/hero-mining.png" alt="Mining operations in space" class="hero-image">
+    
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title fade-in">ORION INDUSTRIA MAGNA</h1>
+        <p class="hero-subtitle fade-in-delay-1">Mining the stars, forging the future</p>
+        <p class="hero-description fade-in-delay-2">Join our elite resource operations team specializing in mining, salvaging, and transport across the Star Citizen universe.</p>
+        <div class="fade-in-delay-3">
+          <a href="#join" class="btn btn-primary btn-large btn-animated">Join Our Crew</a>
+          <a href="#operations" class="btn btn-secondary btn-large">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">About Our Organization</h2>
+      
+      <div class="row">
+        <div class="col col-md-6 col-sm-12 reveal">
+          <p>Orion Industria Magna is a specialized resource operations organization in the Star Citizen universe, focused on extracting, processing, and transporting valuable resources throughout known space. Named after the RSI Orion, the pinnacle of mining technology, our organization embodies efficiency, professionalism, and technological advancement.</p>
+          
+          <p>Founded with the vision of becoming the premier resource operations group in the 'verse, we combine cutting-edge equipment with skilled operators to maximize productivity while maintaining the highest safety standards. Whether mining asteroids in deep space, salvaging derelict vessels, or transporting valuable cargo, our team approaches each mission with precision and expertise.</p>
+        </div>
+        
+        <div class="col col-md-6 col-sm-12 reveal">
+          <img src="images/logo-main.png" alt="Orion Industria Magna Logo" class="w-100">
+        </div>
+      </div>
+      
+      <div class="row mt-5">
+        <div class="col col-md-4 col-sm-12 reveal">
+          <div class="card">
+            <div class="card-content text-center">
+              <i class="fas fa-rocket fa-3x text-orange mb-3"></i>
+              <h3 class="card-title">Our Mission</h3>
+              <p class="card-text">To extract, process, and transport resources with maximum efficiency while maintaining the highest standards of safety and professionalism.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col-md-4 col-sm-12 reveal">
+          <div class="card">
+            <div class="card-content text-center">
+              <i class="fas fa-eye fa-3x text-orange mb-3"></i>
+              <h3 class="card-title">Our Vision</h3>
+              <p class="card-text">To become the premier resource operations organization in the Star Citizen universe, known for excellence and innovation.</p>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col col-md-4 col-sm-12 reveal">
+          <div class="card">
+            <div class="card-content text-center">
+              <i class="fas fa-gem fa-3x text-orange mb-3"></i>
+              <h3 class="card-title">Our Values</h3>
+              <p class="card-text">Efficiency, Professionalism, Innovation, Teamwork, and Safety guide all our operations across the stars.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Operations Section -->
+  <section id="operations" class="section operations">
+    <div class="container">
+      <h2 class="section-title text-center">Our Operations</h2>
+      
+      <div class="operations-tabs">
+        <button class="tab-button active" data-tab="mining-tab">Mining</button>
+        <button class="tab-button" data-tab="salvaging-tab">Salvaging</button>
+        <button class="tab-button" data-tab="transport-tab">Transport</button>
+      </div>
+      
+      <div id="mining-tab" class="tab-content active">
+        <div class="row">
+          <div class="col col-md-6 col-sm-12 reveal">
+            <img src="images/hero-mining.png" alt="Mining operations" class="operation-image">
+          </div>
+          
+          <div class="col col-md-6 col-sm-12 reveal">
+            <h3>Mining Operations</h3>
+            <p>Our mining division specializes in extracting valuable minerals and resources from asteroids, planetoids, and planetary surfaces throughout the Star Citizen universe. Using state-of-the-art mining ships like the RSI Orion and MISC Prospector, our skilled operators can identify, extract, and process a wide variety of resources.</p>
+            
+            <h4>Mining Capabilities:</h4>
+            <ul class="benefits-list">
+              <li class="benefits-item">Asteroid belt mining operations</li>
+              <li class="benefits-item">Planetary surface extraction</li>
+              <li class="benefits-item">Deep space resource identification</li>
+              <li class="benefits-item">Precision extraction of volatile materials</li>
+              <li class="benefits-item">On-site ore refinement and processing</li>
+            </ul>
+            
+            <p>Our mining teams are equipped with the latest technology and trained in advanced extraction techniques to maximize yield while minimizing risk. Whether it's common minerals or rare elements, our operators can locate and extract resources with precision and efficiency.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="salvaging-tab" class="tab-content">
+        <div class="row">
+          <div class="col col-md-6 col-sm-12 reveal">
+            <img src="images/hero-salvaging.png" alt="Salvaging operations" class="operation-image">
+          </div>
+          
+          <div class="col col-md-6 col-sm-12 reveal">
+            <h3>Salvaging Operations</h3>
+            <p>Our salvage division specializes in recovering valuable materials and components from derelict spacecraft, wreckage sites, and abandoned structures. Using specialized salvage vessels equipped with cutting-edge recovery technology, our teams can efficiently extract valuable resources from even the most challenging environments.</p>
+            
+            <h4>Salvaging Capabilities:</h4>
+            <ul class="benefits-list">
+              <li class="benefits-item">Spacecraft wreckage recovery</li>
+              <li class="benefits-item">Component extraction and preservation</li>
+              <li class="benefits-item">Material reclamation from derelict structures</li>
+              <li class="benefits-item">Hazardous environment operations</li>
+              <li class="benefits-item">Black box and data recovery</li>
+            </ul>
+            
+            <p>Our salvage operators are trained to assess wreckage sites quickly, identify valuable materials, and extract them with minimal waste. This sustainable approach to resource gathering helps recycle valuable materials while clearing space debris.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div id="transport-tab" class="tab-content">
+        <div class="row">
+          <div class="col col-md-6 col-sm-12 reveal">
+            <img src="images/hero-transport-clean.png" alt="Transport operations" class="operation-image">
+          </div>
+          
+          <div class="col col-md-6 col-sm-12 reveal">
+            <h3>Transport Operations</h3>
+            <p>Our transport division ensures that extracted resources and salvaged materials reach their destinations safely and efficiently. Using a fleet of dedicated cargo vessels ranging from nimble haulers to massive freighters, we can transport goods across any distance in the Star Citizen universe.</p>
+            
+            <h4>Transport Capabilities:</h4>
+            <ul class="benefits-list">
+              <li class="benefits-item">Secure cargo transport across all security zones</li>
+              <li class="benefits-item">Specialized handling of volatile and sensitive materials</li>
+              <li class="benefits-item">Armed escort for high-value shipments</li>
+              <li class="benefits-item">Efficient route planning and fuel optimization</li>
+              <li class="benefits-item">Rapid deployment logistics support</li>
+            </ul>
+            
+            <p>Our transport pilots are experts in navigation, evasion, and defensive flying techniques. With our transport services, you can be confident that your valuable cargo will reach its destination intact, regardless of the challenges encountered along the way.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet Section -->
+  <section id="fleet" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Our Fleet</h2>
+      
+      <div class="fleet-item reveal">
+        <img src="images/hero-mining.png" alt="RSI Orion" class="fleet-image">
+        
+        <div class="fleet-details">
+          <h3 class="fleet-name">RSI Orion</h3>
+          <p>The flagship of our mining operations, the RSI Orion is a capital-class mining vessel designed for large-scale resource extraction. With its massive mining laser array and on-board refinery, the Orion can process enormous quantities of ore without needing to return to base.</p>
+          
+          <div class="fleet-specs">
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Role</span>
+              <span class="fleet-spec-value">Industrial Mining</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Manufacturer</span>
+              <span class="fleet-spec-value">Roberts Space Industries</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Size</span>
+              <span class="fleet-spec-value">Capital</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Crew</span>
+              <span class="fleet-spec-value">6-8</span>
+            </div>
+          </div>
+          
+          <p>The Orion represents the pinnacle of mining technology, capable of breaking down and processing even the largest asteroids. Its advanced sensors can detect valuable mineral deposits from great distances, making it the cornerstone of our resource gathering operations.</p>
+        </div>
+      </div>
+      
+      <div class="fleet-item reveal">
+        <img src="images/hero-salvaging.png" alt="Salvage Vessel" class="fleet-image">
+        
+        <div class="fleet-details">
+          <h3 class="fleet-name">Aegis Reclaimer</h3>
+          <p>Our primary salvage vessel, the Aegis Reclaimer is equipped with powerful cutting tools and tractor beams to dismantle and recover materials from derelict ships and structures. Its large cargo hold can store significant amounts of salvaged materials for transport back to processing facilities.</p>
+          
+          <div class="fleet-specs">
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Role</span>
+              <span class="fleet-spec-value">Heavy Salvage</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Manufacturer</span>
+              <span class="fleet-spec-value">Aegis Dynamics</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Size</span>
+              <span class="fleet-spec-value">Large</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Crew</span>
+              <span class="fleet-spec-value">4-5</span>
+            </div>
+          </div>
+          
+          <p>The Reclaimer's specialized equipment allows it to process salvaged materials on-site, maximizing efficiency and reducing the need for additional transport. Its reinforced hull and defensive capabilities ensure it can operate safely even in hostile environments.</p>
+        </div>
+      </div>
+      
+      <div class="fleet-item reveal">
+        <img src="images/hero-transport-clean.png" alt="Transport Vessel" class="fleet-image">
+        
+        <div class="fleet-details">
+          <h3 class="fleet-name">Drake Caterpillar</h3>
+          <p>The backbone of our transport operations, the Drake Caterpillar is a modular cargo ship designed for maximum flexibility. Its detachable command module and configurable cargo sections make it ideal for a variety of transport missions, from bulk resource hauling to specialized cargo delivery.</p>
+          
+          <div class="fleet-specs">
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Role</span>
+              <span class="fleet-spec-value">Transport/Cargo</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Manufacturer</span>
+              <span class="fleet-spec-value">Drake Interplanetary</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Size</span>
+              <span class="fleet-spec-value">Large</span>
+            </div>
+            <div class="fleet-spec">
+              <span class="fleet-spec-label">Crew</span>
+              <span class="fleet-spec-value">2-4</span>
+            </div>
+          </div>
+          
+          <p>The Caterpillar's robust design and defensive capabilities make it well-suited for transport operations in various security environments. Its efficient engines and fuel systems allow for extended range, making it perfect for long-haul cargo missions.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Join Us Section -->
+  <section id="join" class="section">
+    <div class="container">
+      <h2 class="section-title text-center">Join Our Crew</h2>
+      
+      <div class="row">
+        <div class="col col-md-6 col-sm-12 reveal">
+          <h3>Why Join Orion Industria Magna?</h3>
+          <p>We're looking for dedicated pilots and crew members to join our growing organization. Whether you're an experienced miner, salvager, or transport pilot, or just starting your career in the stars, there's a place for you in our crew.</p>
+          
+          <h4>Benefits of Membership:</h4>
+          <ul class="benefits-list">
+            <li class="benefits-item">Access to our fleet of specialized vessels</li>
+            <li class="benefits-item">Training in advanced resource gathering techniques</li>
+            <li class="benefits-item">Fair profit sharing from all operations</li>
+            <li class="benefits-item">Protection during operations in dangerous areas</li>
+            <li class="benefits-item">Collaborative and supportive community</li>
+            <li class="benefits-item">Regular organized operations and events</li>
+          </ul>
+          
+          <p>As a member of Orion Industria Magna, you'll be part of a professional team dedicated to excellence in resource operations. Together, we'll mine the stars and forge the future of the Star Citizen universe.</p>
+        </div>
+        
+        <div class="col col-md-6 col-sm-12 reveal">
+          <div class="recruitment">
+            <h3 class="text-center mb-4">Recruitment Application</h3>
+            
+            <form id="recruitment-form">
+              <div class="form-group">
+                <label for="name" class="form-label">Your Name *</label>
+                <input type="text" id="name" name="name" class="form-control" placeholder="Enter your in-game name" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="handle" class="form-label">RSI Handle *</label>
+                <input type="text" id="handle" name="handle" class="form-control" placeholder="Enter your RSI handle" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address *</label>
+                <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email address" required>
+              </div>
+              
+              <div class="form-group">
+                <label for="discord" class="form-label">Discord Username</label>
+                <input type="text" id="discord" name="discord" class="form-control" placeholder="Enter your Discord username">
+              </div>
+              
+              <div class="form-group">
+                <label for="experience" class="form-label">Experience Level</label>
+                <select id="experience" name="experience" class="form-control form-select">
+                  <option value="new">New to Star Citizen</option>
+                  <option value="beginner">Beginner (0-6 months)</option>
+                  <option value="intermediate">Intermediate (6-12 months)</option>
+                  <option value="experienced">Experienced (1-2 years)</option>
+                  <option value="veteran">Veteran (2+ years)</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="interests" class="form-label">Primary Interests *</label>
+                <select id="interests" name="interests" class="form-control form-select" required>
+                  <option value="">Select your primary interest</option>
+                  <option value="mining">Mining Operations</option>
+                  <option value="salvaging">Salvaging Operations</option>
+                  <option value="transport">Transport Operations</option>
+                  <option value="multiple">Multiple Roles</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message" class="form-label">Why do you want to join?</label>
+                <textarea id="message" name="message" class="form-control" placeholder="Tell us a bit about yourself and why you want to join Orion Industria Magna"></textarea>
+              </div>
+              
+              <button type="submit" class="btn btn-primary w-100">Submit Application</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-logo text-center">
+        <img src="images/logo-horizontal.png" alt="Orion Industria Magna Logo">
+      </div>
+      
+      <div class="footer-nav text-center">
+        <div class="footer-nav-item">
+          <a href="#home" class="footer-nav-link">Home</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="#about" class="footer-nav-link">About</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="#operations" class="footer-nav-link">Operations</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="#fleet" class="footer-nav-link">Fleet</a>
+        </div>
+        <div class="footer-nav-item">
+          <a href="#join" class="footer-nav-link">Join Us</a>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <div class="footer-copyright">
+          &copy; 2952 Orion Industria Magna. All rights reserved. Not affiliated with Roberts Space Industries.
+        </div>
+        
+        <div class="social-links">
+          <a href="#" class="social-link"><i class="fab fa-discord"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-reddit"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+          <a href="#" class="social-link"><i class="fab fa-twitch"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="js/main.js"></script>
+</body>
+</html>
+

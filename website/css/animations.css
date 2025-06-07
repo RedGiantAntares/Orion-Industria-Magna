@@ -1,0 +1,365 @@
+/* Orion Industria Magna - Animations */
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+.fade-in-delay-1 {
+  animation: fadeIn 1s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fadeIn 1s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-3 {
+  animation: fadeIn 1s ease 0.6s forwards;
+  opacity: 0;
+}
+
+/* Slide Up Animation */
+@keyframes slideUp {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slide-up {
+  animation: slideUp 0.8s ease forwards;
+}
+
+.slide-up-delay-1 {
+  animation: slideUp 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.slide-up-delay-2 {
+  animation: slideUp 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+.slide-up-delay-3 {
+  animation: slideUp 0.8s ease 0.6s forwards;
+  opacity: 0;
+}
+
+/* Slide In From Left Animation */
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideInLeft 0.8s ease forwards;
+}
+
+.slide-in-left-delay-1 {
+  animation: slideInLeft 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.slide-in-left-delay-2 {
+  animation: slideInLeft 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+/* Slide In From Right Animation */
+@keyframes slideInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 0.8s ease forwards;
+}
+
+.slide-in-right-delay-1 {
+  animation: slideInRight 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.slide-in-right-delay-2 {
+  animation: slideInRight 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+/* Scale In Animation */
+@keyframes scaleIn {
+  from {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.scale-in {
+  animation: scaleIn 0.8s ease forwards;
+}
+
+.scale-in-delay-1 {
+  animation: scaleIn 0.8s ease 0.2s forwards;
+  opacity: 0;
+}
+
+.scale-in-delay-2 {
+  animation: scaleIn 0.8s ease 0.4s forwards;
+  opacity: 0;
+}
+
+/* Pulse Animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pulse {
+  animation: pulse 2s infinite;
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 5px rgba(255, 107, 53, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 20px rgba(255, 107, 53, 0.8);
+  }
+  100% {
+    box-shadow: 0 0 5px rgba(255, 107, 53, 0.5);
+  }
+}
+
+.glow {
+  animation: glow 2s infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.float {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Rotate Animation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.rotate {
+  animation: rotate 10s linear infinite;
+}
+
+/* Typing Animation */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-industrial-orange);
+  }
+}
+
+.typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 3px solid var(--color-industrial-orange);
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret 0.75s step-end infinite;
+}
+
+/* Shine Effect */
+@keyframes shine {
+  0% {
+    background-position: -100% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shine {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 200% 100%;
+  animation: shine 3s infinite;
+}
+
+/* Laser Beam Animation */
+@keyframes laserBeam {
+  0% {
+    opacity: 0.5;
+    transform: scaleX(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.05);
+  }
+  100% {
+    opacity: 0.5;
+    transform: scaleX(0.95);
+  }
+}
+
+.laser-beam {
+  animation: laserBeam 1.5s ease-in-out infinite;
+  transform-origin: left center;
+}
+
+/* Space Dust Animation */
+@keyframes spaceDust {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 100%;
+  }
+}
+
+.space-dust {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: spaceDust 60s linear infinite;
+}
+
+/* Scroll Reveal Animation */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.8s ease;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover Effects */
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.05);
+}
+
+.hover-glow {
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-glow:hover {
+  box-shadow: 0 0 15px rgba(255, 107, 53, 0.7);
+}
+
+.hover-bright {
+  transition: filter 0.3s ease;
+}
+
+.hover-bright:hover {
+  filter: brightness(1.2);
+}
+
+/* Button Animation */
+.btn-animated {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-animated::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(255, 255, 255, 0.2) 50%,
+    transparent 100%
+  );
+  transition: left 0.5s ease;
+}
+
+.btn-animated:hover::before {
+  left: 100%;
+}
+

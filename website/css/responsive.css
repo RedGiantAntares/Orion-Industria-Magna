@@ -1,0 +1,293 @@
+/* Orion Industria Magna - Responsive Styles */
+
+/* Extra Large Devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+/* Large Devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    max-width: 960px;
+  }
+  
+  .hero-title {
+    font-size: 3.5rem;
+  }
+}
+
+/* Medium Devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    max-width: 720px;
+  }
+  
+  .hero-title {
+    font-size: 3rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.25rem;
+  }
+  
+  h1 {
+    font-size: 2.75rem;
+  }
+  
+  h2 {
+    font-size: 2.25rem;
+  }
+  
+  h3 {
+    font-size: 1.875rem;
+  }
+  
+  .fleet-item {
+    flex-direction: column;
+  }
+  
+  .fleet-image {
+    width: 100%;
+    margin-bottom: var(--space-lg);
+  }
+  
+  .fleet-details {
+    width: 100%;
+    padding-left: 0;
+  }
+  
+  /* Column adjustments for tablets */
+  .col-md-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .col-md-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .col-md-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-md-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .col-md-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .col-md-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-md-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .col-md-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .col-md-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* Small Devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    max-width: 540px;
+  }
+  
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.125rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+  }
+  
+  h3 {
+    font-size: 1.75rem;
+  }
+  
+  .header-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+    margin-bottom: var(--space-md);
+  }
+  
+  .nav {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 17, 40, 0.95);
+    flex-direction: column;
+    padding: var(--space-lg) 0;
+  }
+  
+  .nav-list.active {
+    display: flex;
+  }
+  
+  .nav-item {
+    margin: 0;
+    text-align: center;
+    padding: var(--space-md) 0;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .nav-cta {
+    margin: var(--space-lg) 0 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .operations-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--space-sm);
+  }
+  
+  /* Column adjustments for small devices */
+  .col-sm-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .col-sm-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .col-sm-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-sm-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .col-sm-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-sm-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .col-sm-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .col-sm-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-sm-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .col-sm-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* Extra Small Devices (portrait phones, less than 576px) */
+@media (max-width: 575px) {
+  .container {
+    padding: 0 var(--space-md);
+  }
+  
+  .hero-title {
+    font-size: 2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
+  }
+  
+  h1 {
+    font-size: 2rem;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  .header-container {
+    flex-direction: column;
+  }
+  
+  .logo {
+    margin-bottom: var(--space-md);
+  }
+  
+  .nav {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .nav-list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(10, 17, 40, 0.95);
+    flex-direction: column;
+    padding: var(--space-lg) 0;
+  }
+  
+  .nav-list.active {
+    display: flex;
+  }
+  
+  .nav-item {
+    margin: 0;
+    text-align: center;
+    padding: var(--space-md) 0;
+  }
+  
+  .mobile-menu-toggle {
+    display: block;
+  }
+  
+  .nav-cta {
+    margin: var(--space-lg) 0 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .btn {
+    display: block;
+    width: 100%;
+  }
+  
+  .section {
+    padding: var(--space-xl) 0;
+  }
+  
+  .operations-tabs {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tab-button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: var(--space-sm);
+  }
+  
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .footer-copyright {
+    margin-bottom: var(--space-md);
+  }
+  
+  .social-links {
+    justify-content: center;
+  }
+  
+  /* Column adjustments for extra small devices */
+  .col-xs-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .col-xs-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .col-xs-3 { flex: 0 0 25%; max-width: 25%; }
+  .col-xs-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .col-xs-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .col-xs-6 { flex: 0 0 50%; max-width: 50%; }
+  .col-xs-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .col-xs-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .col-xs-9 { flex: 0 0 75%; max-width: 75%; }
+  .col-xs-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .col-xs-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .col-xs-12 { flex: 0 0 100%; max-width: 100%; }
+}
+
